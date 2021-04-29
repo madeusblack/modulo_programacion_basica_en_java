@@ -1,0 +1,79 @@
+Actividad :
+Crear un algoritmo de la creacion de un sandwich
+
+Desarrollo:
+entradas:pan, jamon, cuchillo, servilleta, plato.
+
+procesos:cortar pan, abrir el pan, intruducir jamon en pan, cerrar el pan, colocar el pan sobre una servilleta,
+colocar pan y servilleta sobre un plato, servir en ubicacion final.
+
+salida: pan servido listo para comer.
+
+Actividad Grupal:
+Crear algoritmos con las siguientes tematicas:
+canmbiar rueda auto
+cambiar pañal
+cambiar clave correo electronico
+
+
+cambiar rueda auto :
+Algoritmo Cambio de Rueda
+Pre Requisitos
+Tener un Auto.
+Tener un problema con solo una de las ruedas.
+Tener Rueda de Auxilio en condiciones.
+Tener Llave de Repuesto.
+Tener la Gata en condiciones.
+Tener Chaleco Reflectante.
+Tener Triangulo de Seguridad.
+Los pernos de la ruedan deben estar en un estado aceptable.
+El Vehículo debe estar en un lugar seguro para el cambio.
+Entrada
+Auto.
+Rueda de Repuesto.
+Llave Cruz.
+Chaleco Reflectante
+Triangulo de Seguridad.
+Gata.
+
+Proceso
+
+1.	Encender las balizas del Auto.
+2.	Poner el Freno de Marcha.
+3.	Apagar el Auto.
+4.	Colocarse el chaleco Reflectante.
+5.	Bajar del vehículo, colocar el tranquilo de seguridad a la distancia requerida por la ley.
+6.	Revisar si efectivamente hay un problema con la rueda.
+7.	Vamos al lugar del auto que tenga los implementos para el cambio.
+8.	Retiramos los elementos en el orden que disponga el auto.
+9.	Sacar lo elementos. Rueda, Llave, etc.
+10.	Segundo Check de la Rueda de Auxilio.
+11.	Aflojar los pernos en el suelo, con la llave cruz.
+12.	Colocar gata en posición.
+13.	Revisar si la gata está colocada en la forma correspondiente.
+14.	Elevar la Gata con la llave.
+15.	Una vez en la altura adecuada, retiramos los pernos, colándolos en un lugar a la vista.
+16.	Quitar la rueda que presenta desperfectos.
+17.	Colocar la rueda de Auxilio.
+18.	Colocar y ajustar los pernos.
+19.	Descender el auto con la gata.
+20.	Retirar la Gata.
+21.	Ajustar los pernos. Chequear si están ajustados de la forma correcta.
+22.	Guardar los elementos.
+23.	Quitar el triángulo de seguridad. Guardarlo en su lugar.
+24.	Subirse al auto. 
+25.	Quitarse el Chaleco.
+26.	Ponerse el cinturón.
+27.	Quitar las Balizas y el freno.
+28.	Ir a tu destino!
+
+Salida
+Un auto Seguro!
+
+cambiar pañal:
+entrada:bebe que necesite mudarse, pañal limpio, hipoglos, toallas humedas
+proceso:
+desvestir al bebe 
+salida:
+cambiar clave correo electronico:
+
