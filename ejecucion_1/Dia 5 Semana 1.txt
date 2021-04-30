@@ -1,0 +1,33 @@
+Ejercicio
+Elaborar un algoritmo para realizar una compra en una tienda virtual:
+
+Prerequisitos:
+-Acceso a internet
+-Saldo en la cuenta bancaria
+-Contar con las claves de para por internet en la cuenta bancaria
+-Stock del producto a comprar
+-Disponibilidad del Sitio de venta
+-Disponibilidad del Proveedor de el pago (transbank)
+
+Entradas:cuenta bancaria, stock producto, id de producto, catalogo de productos,
+cuenta de usuario de cliente, o datos de cliente para crear la cuenta
+
+Proceso:
+1.-Cliente ingresa al sitio web,
+2.-LLega al producto deseado ya sea por catalogo o por algun link directo,
+3.-cliente añade al carrito el producto,
+4.-cliente selecciona pagar el carrito,
+5.-al momento de pagar se le solicita ingresar, registrarse o realizar el pago sin registro,
+6.-en caso de registrarse se inicia proceso de registro y se redirige al paso 8,
+7.-en caso de pago sin registro se le solicitan datos personales de envio e identificacion
+8.-en caso de ingresar se le solicita confirmar la direccion de envio y metodo de envio
+9.-se solicita el pago al cliente y se inicia conexion con proveedor de pago
+9.-cliente realiza el pago exitosamente y se le realiza envio de comprobante de pago
+10 se ingresa el pedido del cliente al sistema interno y se valida stock fisicamente
+11 en caso de realizarse validacion de stock se confirma compra de cliente y se envia boleta electronica
+12 se realiza envio de producto asi como se le envia al cliente la informacion de seguimiento
+13 cliente recibe el producto
+
+
+Salidas: en caso de no haber una salida intermedia, cliente recibe el producto, fin de la transaccion, siempre y cuando cliente no presente problemas con el producto
+
