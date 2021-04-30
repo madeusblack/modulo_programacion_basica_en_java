@@ -1,6 +1,0 @@
-entradas:pan, jamon, cuchillo, servilleta, plato.
-
-procesos:cortar pan, abrir el pan, intruducir jamon en pan, cerrar el pan, colocar el pan sobre una servilleta,
-colocar pan y servilleta sobre un plato, servir en ubicacion final.
-
-salida: pan servido listo para comer.

@@ -29,5 +29,127 @@ Proceso:
 13 cliente recibe el producto
 
 
-Salidas: en caso de no haber una salida intermedia, cliente recibe el producto, fin de la transaccion, siempre y cuando cliente no presente problemas con el producto
+Salidas: en caso de no haber una salida intermedia, cliente recibe el producto, fin de la transaccion, 
+siempre y cuando cliente no presente problemas con el producto
+
+
+Actividad Grupal:
+investigar sobre tipos de datos primitivos en java
+
+Byte: 
+Los bytes son frecuentemente usados para almacenar caracteres individuales en un documento de texto. En el código ASCII cada valor binario entre 0 y 127 es asignado con un carácter específico. La mayoría de las computadoras extienden el código ASCII para usar el rango completo de 256 caracteres disponibles en un byte.
+ 
+Short:
+Representa un tipo de dato de 16 bits con signo. De esta manera almacena valores numéricos de -32.768 a 32.767.
+ 
+Int:
+Las variables de tipo entero o int son aquellas que almacenan un número (ya sea positivo o negativo) no decimal. Debido a que cuando creamos una variable reservamos memoria para ella, cada tipo de variable reservará más o menos memoria para representar el dato que almacenarán.
+ 
+Long: 
+En Java existen cuatro tipos destinados a almacenar números enteros. ... long : es el tipo entero de mayor tamaño, 8 bytes (64 bits), con un rango de valores desde -263 a 263-1.
+Float:  conocido como tipo de precisión simple, emplea un total de 32 bits. Con este tipo de datos es posible representar números en el rango de 1.4x10-45 a 3.4028235x1038.
+ 
+Double: sigue un esquema de almacenamiento similar al anterior, pero usando 64 bits en lugar de 32. Esto le permite representar valores en el rango de 4.9x10-324 a 1.7976931348623157x10308.
+ 
+Char:
+El tipo de datos char sirve para representar o contener un solo carácter. Un byte y un char son la misma cosa, excepto porque char se utiliza como carácter, o como parte de una cadena de caracteres, y no se puede utilizar en una expresión aritmética, mientras que un byte solamente puede ser usado como un tipo numérico.
+ 
+Boolean: 
+Puede almacenar únicamente dos valores: verdadero o falso. True: representa el valor verdadero. false: representa el valor falso.
+
+Actividad individual 2:
+Ejercicio
+Elaborar un algoritmo para realizar una compra en una tienda virtual implementando variables y constantes:
+
+Prerequisitos:
+-Acceso a internet
+-Saldo en la cuenta bancaria
+-Contar con las claves de para por internet en la cuenta bancaria
+-Stock del producto a comprar
+-Disponibilidad del Sitio de venta
+-Disponibilidad del Proveedor de el pago (transbank)
+
+Entradas:cuenta bancaria, stock producto, id de producto, catalogo de productos,
+cuenta de usuario de cliente, o datos de cliente para crear la cuenta
+Constantes: iva,nombre de la pagina, rut de la empresa, direccion de la empresa, nombre del cliente, rut del cliente,id de producto,numero de pedido,id de despacho,numero de boleta,
+Variables: nombre de usuario, clave de usuario, nombre de producto, stock de producto,valor del producto, 
+,direccion del cliente.
+
+Proceso:
+1.-Cliente ingresa al sitio web,
+2.-LLega al producto deseado ya sea por catalogo o por algun link directo,
+3.-cliente añade al carrito el producto,
+4.-cliente selecciona pagar el carrito,
+5.-al momento de pagar se le solicita ingresar, registrarse o realizar el pago sin registro,
+6.-en caso de registrarse se inicia proceso de registro y se redirige al paso 8,
+7.-en caso de pago sin registro se le solicitan datos personales de envio e identificacion
+8.-en caso de ingresar se le solicita confirmar la direccion de envio y metodo de envio
+9.-se solicita el pago al cliente y se inicia conexion con proveedor de pago
+9.-cliente realiza el pago exitosamente y se le realiza envio de comprobante de pago
+10 se ingresa el pedido del cliente al sistema interno y se valida stock fisicamente
+11 en caso de realizarse validacion de stock se confirma compra de cliente y se envia boleta electronica
+12 se realiza envio de producto asi como se le envia al cliente la informacion de seguimiento
+13 cliente recibe el producto
+
+
+Salidas: en caso de no haber una salida intermedia, cliente recibe el producto, fin de la transaccion, 
+siempre y cuando cliente no presente problemas con el producto
+
+
+Actividad grupal 2:
+crear algorito que genere una liquidacion de sueldo
+con entradas, constantes y procesos
+
+liquidacion de sueldo
+
+entrada
+variables
+nombre=string
+rut=string
+cargo=string
+afp=string
+tipodesaludsalud=string
+porcafp=float
+porssalud=float
+sueldo=long
+horasext=int
+valorhext=double
+bonocolac=int
+bonomov=int
+cargfam=int
+valorcf=double
+falor
+
+proceso
+selecciona empleado ingresando rut
+valorentra=sueldo+(horasext*valorhext)+bonocolac+bonomov+(cargfam*valorcf)
+valordesc=(sueldo*porcafp)+(sueldo*porssalud)
+valorliq=valorentra-valodesc
+
+salida
+liquidacion lista para su entrega
+
+Crear algoritmo que permita realizar una boleta de honorarios electronica:
+entradas constantes y procesos
+
+giro emisor string variable
+direccion emisor string variable
+
+nombre receptor string variable
+domicilio receptor string variable
+fecha boleta string variable
+rut receptor string variable
+motivo string variable
+total honorario integer variable
+descuento boleta float constante
+total liquido integer variable
+
+-selecciona usuario emisor
+-selecciona receptor
+-ingresa motivo boleta
+-ingreso monto
+-calcular porc impuesto
+-mostrar total liq (total boleta -11.5%)
+confirmar emision
+
 
