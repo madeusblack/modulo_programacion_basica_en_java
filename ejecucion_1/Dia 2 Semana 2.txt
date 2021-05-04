@@ -1,0 +1,167 @@
+En cada ejercicio determinar las variables y/o constantes involucradas.
+
+
+1. Realizar un algoritmo en pseudocódigo que permita sumar dos números.
+
+a + b = x 
+variables
+numero1
+numero2
+resultado
+
+inicio
+imprimir: "ingrese el primer numero a sumar"
+leer: numero1
+imprimir: "ingrese segundo numero a sumar"
+leer: numero2
+leer: resultado = numero 1 + numero 2
+imprimir: "su resultado es 'resultado' "
+fin
+
+
+
+2. Realizar un algoritmo en pseudocódigo que permita calcular el promedio de 3 notas.
+
+(a + b + c)/3 = x
+
+Declarar nota 1, 
+declarar nota 2,
+Declarar nota 3,
+Sumar notas,
+Dividir resultado por 3 
+Imprimir resultado
+ 
+Variable: nota 1, nota 2, nota 3 , resultado de la suma de los números 1, 2 y 3 y resultado final
+Constante: división de la suma de números
+
+3. Realizar un algoritmo en pseudocódigo que permita calcular el cuadrado de un número.
+
+x = a*a
+
+variable numero1
+variable resultado
+inicio
+escribir "ingrese un numero: "
+leer numero1
+
+resultado = numero1 * numero1
+escribir "el cuadrado de ", numero1, " es: " , resultado
+fin
+
+
+--------------------------------
+
+
+
+
+declaracion de variables y constantes
+variables:
+ inversioninicial
+ pagomensual
+constante:
+ porcentajemensual
+
+inicio
+ imprimir:"ingrese inversion inicial"
+ leer: inversioninicial
+ pagomensual=(inversioninicial/100)*porcentajemensual
+ imprimir:"su pago mensual será de pagomensual"
+fin
+
+ 1.- Realizar un algoritmo en pseudocódigo que pida ingresar el modelo y la marca de un vehículo y me muestre por pantalla los datos ingresados.
+Ingresar marca de vehículo
+V1 = marca de vehículo
+Leer v1
+Ingresar modelo de vehículo
+V2 = modelo del vehículo
+Leer v2
+
+
+"la marca de vehiculo es" + v1 + "y el modelo es" + v2
+
+M1 = Modelo vehiculo --> Variable 
+M2 = Marca vehiculo --> Variable
+Resultado = 
+
+INICIO
+	"Escribir M1"
+	"Leer M1"
+	"Escribir M2"
+	"Leer M2"
+	Print: “El modelo de su vehículo es: “ +  M1  + “y la marca”  + M2
+`El modelo de su vehículo es : ${M1} y la marca ${M2}`
+FIN
+2. Realizar un algoritmo en pseudocódigo que permita calcular el porcentaje solicitado de un número ingresado 
+
+V% = variable porcentaje
+VN = variable numero
+R = variable resultado
+
+escribir ingrese variable número : “”
+leer numero 
+escribir ingrese variable porcentaje: “”
+leer porcentaje
+R =(VN/100)*V%
+Escribir : “El ”+ V% + “% de” + VN  + “es” + R 
+
+
+3. Realizar un algoritmo en pseudocódigo que para resolver el siguiente problema: "Un vendedor recibe un sueldo base más un 10% de comisión de sus venta, el vendedor desea saber cuánto dinero obtendrá por concepto de mis comisiones por tres ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.  
+variable sueldo_base
+variable cant_ventas
+variable monto_ventas
+variable resultado
+
+constante porc_ventas =10
+
+escribir " ingrese su sueldo base : "
+leer sueldo_base
+escribir " ingrese su monto de ventas : "
+leer monto_ventas
+
+resultado=(monto_ventas*porc_ventas)/100
+
+escribir "comisiones por ventas: ", resultado
+escribir "sueldo total: ", sueldo_base+resultado
+
+intercambio de valores
+acomuladora
+acomuladorb 
+a=2
+b=3
+
+inicio
+acomuladora=a
+acomuladorb=b
+a=acomuladorb
+b=acomuladora
+fin
+
+a=2
+b=3
+a=a+b
+
+a=3
+b=2
+a=a+b
+b=a-b
+a=a-b
+a
+b
+
+
+
+SI (endulzante= endulzante){
+    usar x cantidad
+}SI NO{
+    SI(endulzante= sucralosa){
+        usar y cantidad
+    }
+    SI NO{
+        usar azucar con z cantidad
+    }
+}
+Segun (temp C)
+    10c usar chaqueta
+    16c usar ropa normal
+    20c usar ropa holgada
+fin segun
