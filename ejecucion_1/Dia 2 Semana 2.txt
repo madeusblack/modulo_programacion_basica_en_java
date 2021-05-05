@@ -165,3 +165,33 @@ Segun (temp C)
     16c usar ropa normal
     20c usar ropa holgada
 fin segun
+
+variables-----
+
+nombre
+rut
+edad
+cargo
+díasTrabajados
+descuentos
+sueldoDiario
+sueldoMensual
+
+Inicio 
+imprimir:"ingrese nombre"
+leer nombre
+imprimir:"ingrese rut"
+leer rut
+imprimir:"ingrese edad"
+leer edad
+imprimir:"ingrese cargo"
+leer cargo
+imprimir:"ingrese dias trabajados"
+leer diasTrabajados
+imprimir:"ingrese descuentos"
+leer descuentos
+imprimir:"ingrese sueldo diario"
+leer sueldoDiario
+sueldoMensual= (sueldoDiario * diasTrabajados )-descuentos
+imprimir: "su sueldo mensual es "+ sueldoMensual
+fin

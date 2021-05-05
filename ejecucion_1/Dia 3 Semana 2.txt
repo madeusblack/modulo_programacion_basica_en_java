@@ -1,0 +1,177 @@
+Determinar si un numeroAConsultar es par
+Determinar si es multiplo de 2
+Determinar si es multiplo de 3
+
+numeroAConsultar
+resultado
+
+inicio
+    si(numeroAConsultar%2==0){
+        resultado = par
+    }
+    si no {
+        resultado = impar
+    }
+    imprimir:"el numero" + numeroAConsultar es"
+fin
+
+numeroAConsultar
+resultado
+inicio
+    si(numeroAConsultar%==0){
+        resultado = multiplo
+        imprimir: "el numero " + numeroAConsultar es multiplo de 2
+    }
+    si no {
+        resultado = no es multiplo
+        imprimir: "el numero " + numeroAConsultar no es multiplo de 2
+    }
+fin
+
+numeroAConsultar
+resultado
+inicio
+    si(numeroAConsultar%3==0){
+        resultado = multiplo
+        imprimir: "el numero " + numeroAConsultar es multiplo de 3
+    }
+    si no {
+        resultado = no es multiplo
+        imprimir: "el numero " + numeroAConsultar no es multiplo de 3
+    }
+fin
+
+
+numero1
+numero2
+
+si (numero1>numero2){
+    print :"el numero "+ numero1 + " es mayor que " +numero2
+} si(numero2>numero1){
+    print :"el numero "+ numero1 + " es mayor que " +numero2
+}
+si no{
+    print: "los numeros"+ numero1 +"y"+ numero2 + "son iguales" 
+}
+
+vars
+numero1
+numero2
+suma
+
+inicio
+    imprimir "ingrese 1 numero"
+    leer numero 1
+    imprimir "ingrese otro numero"
+    leer numero 2
+    suma=numero1+numero2
+    si(suma > 0){
+        print:"la suma de ambos numeros es positiva"
+    }
+    si(suma < 0){
+        print:"la suma de ambos numeros es negativa"
+    }
+    Si No{
+        print:"la suma de ambos numeros es igual a 0"
+    }
+fin
+
+
+vars
+numero
+inicio
+print : "ingrese un numero para verificar si es divisible por 2 y por 5"
+si(numero % 2==0 && numero % 5==0){
+    print:"el numero es divisible por 2 y 5"
+}
+si no {
+    print: "el numero no es divisible por 2 y 5 al mismo tiempo"
+}
+fin
+
+vars
+numero1
+numero2
+numero3
+
+inicio
+    print:"ingrese un numero"
+    leer numero1
+    print:"ingrese otro numero"
+    leer numero2
+    print:"ingrese un ultimo numero"
+    leer numero3
+    si(numero1>numero2&&numero1>numero3){
+        print: "el numero "+numero1+ "es el mayore de los 3 numeros ingresados"
+    }
+    si(numero2>numero1&&numero2>numero3){
+    print: "el numero "+numero2+ "es el mayore de los 3 numeros ingresados"
+    }
+    si no{
+            print: "el numero "+numero3+ "es el mayore de los 3 numeros ingresados"
+    }
+fin 
+
+ingresar 2 numeros y resolver operacion solicitada
+
+vars
+numero1
+numero2
+operacion
+resultado
+
+inicio
+    print: "ingrese un numero a operar"
+    read:numero1
+    print: "ingrese un segundo numero a operar"
+    read:numero2
+    print: "seleccione la operacion a realizar entre:suma,resta,division,multiplicacion"
+    read:operacion
+    Segun operacion
+        suma : resultado = numero1+numero2
+        resta : resultado = numero1-numero2
+        division : resultado = numero1/numero2
+        multiplicacion : resultado = numero1*numero2
+    fin segun
+    print:"el resultado es"+ resultado
+fin
+
+Ejercicio Grupal 3: Buscar información sobre los algoritmos de búsqueda y ordenamiento
+
+Integrantes: Leonardo Rodenas, Evelyn Ibarra, Francisco Monroy, Italo Herrera Yayson Olivares y María López
+E-mail: yayson.olivares@gmail.com, italoandres62@gmail.com, ibarrarojas.evelyn@gmail.com, francisco.monroy@gmail.com, mslopezgue@gmail.com
+
+Algoritmos de Búsqueda y Ordenamiento
+
+* De búsqueda:
+
+Definición:
+
+Para encontrar un dato dentro de un arreglo, para ello existen diversos algoritmos que varían en complejidad, eficiencia, tamaño del dominio de búsqueda. Pueden ser de búsqueda Secuencial o Búsqueda Binaria
+
+a) Secuencial: compara el elemento que se busca con cada elemento del arreglo hasta cuando se encuentra.
+
+Ej: buscar elemento u
+
+
+
+
+
+b) Búsqueda Binaria: En el caso anterior de búsqueda se asume que los elementos están en cualquier orden. En el peor de los casos deben hacerse n operaciones de comparación. Una búsqueda más eficiente puede hacerse sobre un arreglo ordenado. Una de éstas es la Búsqueda Binaria. La Búsqueda Binaria, compara si el valor buscado está en la mitad superior o inferior. En la que esté, subdivido nuevamente, y así sucesivamente hasta encontrar el valor.
+
+Ejemplo:
+
+ 
+
+* De ordenamiento:
+
+a) Ordenamiento Ascendente: Existen numerosos algoritmos para ordenar. A continuación se verán algunos algoritmos de ordenamiento. 
+
+Ejemplo: 
+ 
+
+b) Ordenamiento Burbuja (bublesort): Idea: vamos comparando elementos adyacentes y empujamos los valores más livianos hacia arriba (los más pesados van quedando abajo). Idea de la burbuja que asciende, por lo liviana que es.
+
+Ejemplo:
+ 
+ 
