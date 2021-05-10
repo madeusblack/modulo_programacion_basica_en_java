@@ -1,0 +1,136 @@
+Ejercicios
+
+Realizar algortimo en Pseudocodigo que resuelva los siguientes problemas utilizando 3 estructuras iterativas que hemos visto (mientras-hacer mientras-para):
+
+1)mostrar por pantalla los n° de 1 del 100 y del 100 al 1.
+
+escribir ("Serie con para: ");
+  para(i = 1; i <= 100; i++)
+   si(i < 100)
+    escribir(i + ",")
+    sino
+   escribir(i)
+
+escribir ("Serie con para: ");
+  para(i = 100; i >=1; i--)
+   si(i > 1)
+    escribir(i + ",")
+    sino
+   escribir(i)
+   
+i=100
+
+hacer 
+ si(i<100)
+  imprimir (i + ", ")
+ sino 
+  imprimir (i)
+
+i--
+mientras (i<=100)
+-------------------------------
+
+2)sumar solo los numeros pares ingresados por un usuario (la cantidad de números que se ingresan debe ser determinada por el usuario).
+
+escribir:"ingrese la cantidad de numeros que desea sumar"
+leer:cantidadDeNumeros
+numerosActuales=0
+sumaPares=0
+numeroActual=0
+mientras(numerosActuales>!=cantidadDeNumeros)
+escribir:"ingrese un numero"
+leer:numeroActual
+si (numeroActual%2==0){
+sumaPares=sumaPares+numeroActual
+}
+numerosActuales++
+fin mientras
+escribir:"la suma de los numeros es: " + sumaPares
+fin
+
+
+3)sumar solo los numeros pares e impares ingresados por un usuario y contar la cantidad de numeros pares e impares (la cantidad de números que se ingresan debe ser determinada por el usuario).
+inicio
+escribir:"ingrese la cantidad de numeros que desea sumar"
+leer:cantidadDeNumeros
+numerosActuales=0
+sumaPares=0
+sumaImpares=0
+sumaTotal=0
+numeroActual=0
+cuentaPares=0
+cuentaImpares=0
+hacer
+escribir="ingrese un numero"
+leer numeroActual
+si(numeroActual%2==0){
+sumaPares=sumaPares+numeroActual
+cuentaPares++
+}
+sino{
+sumaImpares=sumaImpares+numeroActual
+cuentaImpares++
+}
+sumaTotal=sumaTotal+numeroActual
+mientras (numeroActual<cantidadDeNumeros)
+fin hacer mientras
+escribir: "la suma de "+ cuentaPares+"numeros pares es "+ sumaPares 
+escribir: "la suma de "+ cuentaImpares+"numeros impares es "+ sumaImpares 
+escribir: "la suma de todos los numeros es "+ sumaTotal 
+fin
+
+
+inicio 
+numeroActual
+totalNumeros
+menor
+imprimir:"ingrese el total de numeros"
+leer totalNumeros
+    para(i=0;i<totalNumeros;i++)
+    imprimir :ingrese un numero  
+    leer numeroActual
+    si(i==0)
+    {
+        menor=numeroActual
+    }
+    si(numeroActual<menor){
+        menor=numeroActual
+    }
+    print:"el menor de los numeros ingresados es" + menor
+
+fin
+
+
+INICIO
+Escribe Cantidad_Num
+Leer Cantidad_Num
+Mientras (I <=Cantidad_Num)
+Escribe Numero
+Leer Numero
+SI (Numero%2 ==0), HACER
+Escribe Suma_Numpar = Suma_Numpar+Numero
+Cuentapar++
+SI NO, Escribe Mul_Numimpar = Mul_Numimpar*Numero
+Cuenta_impar++
+FIN SI
+I++
+FIN MIENTRAS
+Si Cuenta_par > Cuenta_impar
+Escribe Cuenta_par
+Print: "se ingresaron mas números par"
+SI NO, Cuenta_impar
+Print: "se ingresaron mas números impar"
+FIN
+
+Var:
+
+Numero
+Cantidad_Num
+Suma_Numpar = 0
+Suma_Numimpar = 0
+Cuentapar = 0
+Cuentaimpar = 0
+Multi_Numimpar = 1
+Cuenta_Numimpar = 0
+I = 1
+

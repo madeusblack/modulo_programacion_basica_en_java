@@ -1,0 +1,46 @@
+100 alumnos o mas costo por alumno 6500
+50-99 7000 por alumno
+30-49 9500 por alumno
+menos de 30 400000
+
+inicio
+Imprimir "ingrese nro de alumnos"
+leer totalAlumnos
+	Segun (totalAlumnos)
+		totalAlumnos>=100 Hacer: costoFinal=totalAlumnos*6500
+		totalAlumnos>=50&totalAlumnos<=99 Hacer: costoFinal=totalAlumnos*7000
+		totalAlumnos>=30&totalAlumnos<=49 Hacer: costoFinal=totalAlumnos*7000
+		totalAlumnos<=30 Hacer: costoFinal=400000
+    fin Segun
+Imprimir "el costo final es" costoFinal
+valorPorAlumno=costoFinal=totalAlumnos
+Imprimir "Cada Alumno debe pagar" valorPorAlumno
+fin
+
+Algoritmo chismaphone
+	Imprimir "ingrese duracion de llamada"
+	Leer duracionLLamada
+	Segun (duracionLLamada)
+		duracionLLamada <= 5|| duracionLLamada == 5 hacer:
+			costoFinal=duracionLLamada*100
+		duracionLLamada>5&&duracionLLamada<=8 hacer:
+			costoFinal=((duracionLLamada-5)*80)+500
+		duracionLLamada>8&&duracionLLamada<=10 hacer:
+			costoFinal=((duracionLLamada-8)*70)+740
+		duracionLLamada<10 hacer:
+			costoFinal=((duracionLLamada-10)*50)+880
+	FinSegun
+    imprimir "ingrese fecha y hora de la llamada"
+    leer fechayhora
+	si(fechayhora=="domingo")
+		costoFinal=costoFinal*1.03
+	fin si
+	si(fechayhora=="diahabil"&fechayhora=="turnoMatutino")
+		costoFinal=costoFinal*1.15
+	fin si
+	si(fechayhora=="diahabil"&fechayhora=="turnoMatutino")
+		costoFinal=costoFinal*1.1
+	fin si
+	Imprimir "el costo final de la llamada es" costoFinal
+				
+FinAlgoritmo
