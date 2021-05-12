@@ -1,0 +1,162 @@
+Algoritmo Buses
+	Imprimir "ingrese total de autobuses"
+	Leer totalAutobuses
+	Para i=1 Hasta totalAutobuses Con Paso 1
+		Imprimir "Seleccione tipo autobus(a, b,c)"
+		Leer tipoAutobus
+		Imprimir "ingrese Total Personas"
+		Leer totalPersonas
+		Imprimir "ingrese total km"
+		Leer Kms
+		Segun (tipoAutobus)
+			tipoAutobus=="A" Hacer:
+				valorPorPersona=200*Kms
+				Imprimir "el valor por persona es " valorPorPersona
+					si(totalPersonas<=20)
+						
+						valorbus=(20*200)*Kms
+						
+						SiNo
+							valorbus=(totalPersonas*200)*Kms
+						FinSi
+				Imprimir "el valor de este trayecto es" valorbus
+				tipoAutobus=="B" Hacer:
+					valorPorPersona=250*Kms
+					Imprimir "el valor por persona es " valorPorPersona
+					si(totalPersonas<=20)
+							valorbus=(20*250)*Kms
+						SiNo
+							valorbus=(totalPersonas*250)*Kms
+						FinSi
+					Imprimir "el valor de este trayecto es" valorbus
+				tipoAutobus=="C" Hacer:
+					valorPorPersona=300*Kms
+					Imprimir "el valor por persona es " valorPorPersona
+					si(totalPersonas<=20)
+							valorbus=(20*300)*Kms
+						SiNo
+							valorbus=(totalPersonas*300)*Kms
+						FinSi
+					Imprimir "el valor de este trayecto es" valorbus
+			FinSegun
+		totalValor=totalValor+valorbus
+	FinPara
+	Imprimir "el valor final es " totalValor
+FinAlgoritmo
+Algoritmo ahorro_anual
+
+	Para i <- 1 Hasta 12 Con Paso 1 Hacer
+		Imprimir "ahorro mensual"
+		Leer ahorroactual
+		ahorrototal=ahorrototal+ahorroactual
+		Imprimir "hasta este mes lleva ahorrados $" ahorrototal
+	Fin Para
+	Imprimir "el ahorro de todo el año es de " ahorrototal
+FinAlgoritmo
+Algoritmo fabrica
+	Escribir 'ingrese producto'
+	Leer claveProducto
+	Escribir "ingrese costo materia prima"
+	Leer materiaPrima
+	Segun claveProducto
+		3,4 Hacer:
+			manodeobra <- materiaPrima*0.75
+		1,5 Hacer:
+			manodeobra <- materiaPrima*0.80
+		2,6 Hacer:
+			manodeobra <- materiaPrima*0.85
+	FinSegun
+	Segun claveProducto
+		2,5 Hacer:
+			gastoFabricacion <- materiaPrima*0.30
+		3,6 Hacer:
+			gastoFabricacion <- materiaPrima*0.35
+		1,4 Hacer:
+			gastoFabricacion <- materiaPrima*0.28
+	FinSegun
+	costoProduccion=materiaPrima+manodeobra+gastoFabricacion
+	venta=costoProduccion+(costoProduccion*0.45)
+	Imprimir "El valor de venta del producto es $" venta
+FinAlgoritmo
+Algoritmo dr_t_mata_lozano
+	Escribir 'ingrese la cita acstual'
+	Definir citaActual Como Entero
+	Leer citaActual
+	Segun citaActual
+		1,2,3 Hacer:
+			valorFinal <- ((citaActual-1)*20000)
+			Escribir 'el valor de esta cita de 20000 y el costo total del tratamiento ha sido $',valorFinal
+		4,5 Hacer:
+			valorFinal <- ((citaActual-4)*15000)+60000
+			Escribir 'el valor de esta cita de $15000 y el costo total del tratamiento ha sido $',valorFinal
+		6,7,8 Hacer:
+			valorFinal <- ((citaActual-6)*10000)+90000
+			Escribir 'el valor de esta cita de $10000 y el costo total del tratamiento ha sido $',valorFinal
+		De Otro Modo:
+			valorFinal <- ((citaActual-10)*5000)+120000
+			Escribir 'el valor de esta cita de $5000 y el costo total del tratamiento ha sido $',valorFinal
+	FinSegun
+FinAlgoritmo
+Algoritmo edad_alumnos
+	Imprimir "ingrese la cantidad de alumnos"
+	Leer cantidad_alumnos
+	Para i <- 1 Hasta cantidad_alumnos Con Paso 1 Hacer
+		Imprimir "ingrese nota del alumno"
+		Leer notaAlumno
+		sumanotas=sumanotas+notaAlumno
+	Fin Para
+	promedionotas=sumanotas/cantidad_alumnos
+	Imprimir "el promedio de los alumnos es de " promedionotas
+FinAlgoritmo
+Algoritmo pago_sueldo
+	Imprimir "ingrese sueldo por hora"
+	Leer sueldoHora
+	Imprimir "Ingrese las horas por dia que trabajo el empleado"
+	Para i <- 1 Hasta 6 Con Paso 1 Hacer
+		Imprimir "ingrese las horas del dia " i
+		Leer diaActual
+		horasTotales=horasTotales+diaActual
+	Fin Para
+	sueldo=sueldoHora*horasTotales
+	Imprimir "el empleado trabajo " horasTotales "horas y su sueldo a pagar es de " sueldo
+	
+FinAlgoritmo
+Algoritmo zero_over_zero
+	Imprimir "ingrese cantidad de valores"
+	Leer cantidad_de_valores
+	Para i <- 1 Hasta cantidad_de_valores Con Paso 1 Hacer
+		Imprimir "ingrese valor"
+		Leer valorActual
+		si(valorActual<=0)
+			variableszero=variableszero+1
+		SiNo
+			variablesOverZero=variablesOverZero+1
+		FinSi
+
+	Fin Para
+	Imprimir "las cifras sobre cero son " variablesOverZero "y las cifras menores o igual a cero son " variableszero
+	
+FinAlgoritmo
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class NewMain {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println(" Hola Mundo");
+        
+    }
+    
+}
