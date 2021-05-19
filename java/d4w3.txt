@@ -1,0 +1,227 @@
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class langostaahumada {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        /*costo platillo por persona 9500
+        mayor a 200 y menor que 300 8500
+        mas de 300 7500 */
+            System.out.println("ingrese la cantidad de personsas");
+            Scanner lector=new Scanner(System.in);
+            int personas=lector.nextInt();
+            int costoPlatillo=9500;
+            if(personas>200&&personas<300){
+                costoPlatillo=8500;
+            }
+            if(personas>300){
+                costoPlatillo=7500;
+            }
+            System.out.println("el costo por persona esl " + costoPlatillo);
+            System.out.println("el costo total es  " + (costoPlatillo*personas));
+    }
+    
+}
+
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class vinicultores {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+            System.out.println("ingrese el tipo de uva");
+            Scanner lector=new Scanner(System.in);
+            String tipoUva=lector.next();
+            System.out.println("ingrese el tamaño de uva");
+            int tamañoUva=lector.nextInt();
+            int precioFinal=0;
+            if(tipoUva=="a"||tipoUva=="A"){
+                if(tamañoUva==1){
+                precioFinal=precioFinal+20;
+                }else{
+                    precioFinal=precioFinal+30;
+                }
+            }else{
+                if(tamañoUva==1){
+                    precioFinal=precioFinal-30;
+                }else{
+                    precioFinal=precioFinal-50;
+
+                }
+            }
+            System.out.println("ingrese total de kgs");
+            int totalKgs=lector.nextInt();
+            System.out.println("el total de ganancia/perdida es"+(totalKgs*precioFinal));                
+    }
+    
+}
+
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class switchcase {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("ingrese cantidad de alumnos");
+        System.out.println("ingrese una nota");
+        Scanner lector=new Scanner(System.in);
+        int cantidadAlumnos=lector.nextInt();
+        int rango=0,costoTotal=0,costoPorAlumno=0;
+        if(cantidadAlumnos>100){rango=1;}
+        if(cantidadAlumnos>50&&cantidadAlumnos<99){rango=2;}
+        if(cantidadAlumnos>30&&cantidadAlumnos<49){rango=3;}
+        if(cantidadAlumnos<30){rango=0;}
+
+        switch (rango){
+            case 1 :
+                costoPorAlumno=6500;
+                costoTotal=cantidadAlumnos*costoPorAlumno;
+            break;
+            case 2 :
+                costoPorAlumno=7000;
+                costoTotal=cantidadAlumnos*costoPorAlumno;
+            break;
+            case 3 :
+                costoPorAlumno=9500;
+                costoTotal=cantidadAlumnos*costoPorAlumno;
+            break;
+            default:
+                costoPorAlumno=400000/cantidadAlumnos;
+                costoTotal=400000;
+            break;
+        }
+        System.out.println("el costo por alumno es " + costoPorAlumno);
+        System.out.println("el costo por total es " + costoTotal);
+    }
+    
+}
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class chismephone {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("ingrese cantidad de minutos hablados");
+        Scanner lector=new Scanner(System.in);
+        int cantidadMin=lector.nextInt();
+        float valorFinal,costoMinutos=0F;
+        if(cantidadMin<=5){costoMinutos=cantidadMin*100;}
+        if(cantidadMin>5&&cantidadMin<=8){costoMinutos=((cantidadMin-5)*80)+500;}
+        if(cantidadMin>8&&cantidadMin<=10){costoMinutos=((cantidadMin-8)*70)+740;}
+        if(cantidadMin>10){costoMinutos=((cantidadMin-10)*50)+880;}
+        System.out.println("ingrese el dia de la semana en el que se realizo la llamada");
+        String dia=lector.next();
+        
+        if(dia=="Domingo"){
+            valorFinal=costoMinutos*1.03F;
+        }
+        if(dia=="Sabado"){
+            valorFinal=costoMinutos;
+        }else{
+            System.out.println("¿La llamada fue en horario diurno o vespertino?");
+            String horario=lector.next();
+            if(horario=="diurno"){
+                valorFinal=costoMinutos*1.15F;
+
+            }else{
+                valorFinal=costoMinutos*1.10F;
+
+            }
+
+        }
+        System.out.println("el costo de la llamada es " + valorFinal);
+
+
+
+    }
+    
+}
+
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class imprimirnumeros {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("ingrese la cantidad de numeros que desea imprimir");
+        Scanner lector=new Scanner(System.in);
+        int cantidadnum=lector.nextInt();
+        int numerosActuales=1;
+        while(numerosActuales<cantidadnum+1){
+            System.out.println(numerosActuales);
+            numerosActuales=numerosActuales+3;
+        }
+
+    }
+    
+}
