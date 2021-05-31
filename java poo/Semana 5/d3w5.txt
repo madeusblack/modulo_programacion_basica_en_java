@@ -1,0 +1,73 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+    public class  Auto {
+        private int añoFabricacion;
+        private String marca;
+        private String modelo;
+        public Auto(int a, String m, String mod) {
+            modelo=mod;
+            marca=m;
+            añoFabricacion=a;
+        }
+
+        public Auto(int a, String m) {
+            modelo="Sin Modelo";
+            marca=m;
+            añoFabricacion=a;
+        }
+
+        public Auto() {
+            modelo="Sin Modelo";
+            marca="Sin Definir";
+            añoFabricacion=0000;
+        }
+    }
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Madeus
+ */
+public class Cronometro {
+    private int contador;
+    public Cronometro(){
+    this.contador=0;
+    }
+    public Cronometro(int contador){
+        if(contador<=0){
+        this.contador=contador;
+        }else{
+        this.contador=0;}
+    }
+    public int getContador(){
+        return contador;
+    }
+    public void setContador(int contador){
+        if(contador<=0){
+        this.contador=contador;
+        }else{
+        this.contador=0;}
+    }
+    public void aumentarContador(){
+        this.contador++;
+    }
+    public void disminuitContador(){
+        this.contador--;
+    }
+}
+reflexion: las clases nos abren un mundo completo en el ambito de la programacion, asi como los metodos 
+getter y setter nos permiten controlar de forma mucho mas eficiente el flujo de la aplicacion
